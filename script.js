@@ -7,7 +7,7 @@ setTimeout(() => {
     let isGodMode = false;
     $('#speedChanger').on('keypress', e => {
         if(e.keyCode == 13){
-            this.Runner.instance.setSpeed($("#speedChanger").val())
+            this.Runner.instance_.setSpeed($("#speedChanger").val())
         }
     })
     $('#godmode').on('click', e => {
@@ -18,7 +18,7 @@ setTimeout(() => {
     })
     $('#scoreChanger').on('keypress', e => {
         if(e.keyCode == 13){
-            this.Runner.instance.distanceRan = parseInt($("#scoreChanger").val()) / Runner.instance_.distanceMeter.config.COEFFICIENT
+            this.Runner.instance_.distanceRan = parseInt($("#scoreChanger").val()) / Runner.instance_.distanceMeter.config.COEFFICIENT
         }
     })
 }, 75)
